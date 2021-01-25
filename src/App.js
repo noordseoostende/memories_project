@@ -24,11 +24,11 @@ const App = () => {
   <Container maxwidth="lg">
     <AppBar className={classes.appBar} position="static" color="inherit">
       <Typography className={classes.heading} variant="h2" align="center">Herrineringen
-      <img className={classes.images} src={memories} alt="memories" height="60" width="60" /></Typography>
+      <img className={classes.image} src={memories} alt="memories" height="60" width="60" /></Typography>
       </AppBar>
       <Grow in>
-        <Container>
-          <Grid container justify="space-between" alignItems="stretch" spacing={3}>
+        <Container Style="padding-top: 18px">
+          <Grid container className={classes.mainContainer} justify="space-between" alignItems="stretch" spacing={3}>
             <Grid item xs={12} sm={7}>
               <Posts setCurrentId={setCurrentId}/>
             </Grid>
